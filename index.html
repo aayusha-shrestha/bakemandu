@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a bussiness website to sell bakery items in nominal price."/>
+    <meta name="keywords" content="bakery, kathmandu, bakemandu"/>
+    <meta name="author" content="aayusha"/>
+    <title>Bakemandu</title>
+    <!--external CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--internal CSS-->
+    <style>
+        /* landing section */
+        .landingContainer {
+            display: flex;
+            margin-top: 140px;
+        }
+
+        .intro {
+            width: 570px;
+            margin-left: 120px;
+            text-align: left;
+        }
+
+        .intro h2 {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .tasteBtn a{
+            text-decoration: none;
+            border: 1px solid #6F4E37;
+            border-radius: 22px;
+            background-color: white;
+            font-size: 16px;
+            padding: 12px 18px;
+            color: black;
+        }
+
+        .tasteBtn a:hover {
+            color: white;
+            background-color: #6F4E37;
+            transition: .3s;
+        }
+
+        .intro p {
+            margin-bottom: 6px;
+            font-size: 20px;
+        }
+
+        .mainImg {
+            width: 723px;
+            height: 420px;
+        }
+
+        .mainImg img {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* classics section */
+        .classicSection {
+            padding: 80px 0;
+            color:#6F4E37;
+        }
+
+        .classicItems {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .classics {
+            height: 320px;
+            width: 300px;
+            padding: 20px 25px;
+            margin: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .classics img {
+            height: 200px;
+            width: 250px;
+            cursor: pointer;
+            transition: .3s all;
+        }
+
+        .classics img:hover {
+            transform: scale(1.05);
+        }
+
+        .classics h3 {
+            margin-top: 20px;
+            margin-bottom: 12px;
+            color: black;
+        }
+
+        .classics p {
+            width: 220px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!--Nav Bar-->
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="navcontent">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="html/menu.html">Menu</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/faq.html">FAQ</a></li>
+                <li><a href="html/reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Intro-->
+    <section class="landingPage">
+        <div class="landingContainer">
+            <div class="intro">
+                <h2>
+                    <span style="color:#6F4E37">DELIGHT IN</span>
+                    <br/>
+                    EVERY BITE
+                </h2>
+                <p>From citrus to spice and chewy to crunchy,</p>
+                <p>we have crowd-pleasing snacks for every craving.</p><br><br>
+                <div class="tasteBtn">
+                    <a href="html/menu.html">TASTE</a>
+                </div>
+            </div>
+            <div class="mainImg">
+                <img src="images/bread.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--classics section-->
+    <section class="classicSection">
+        <h1 style="text-align: center; font-size: 50px;">OUR CLASSICS</h1>
+        <div class="classicItems">
+            <div class="classics">
+                <img src="images/tiramisu3.jpg">
+                <h3>Tiramisu</h3>
+                <p>Perfect combination of light, but somehow also rich and decadent. </p>
+            </div>
+            <div class="classics">
+                <img src="images/waffle.jpg">
+                <h3>Waffle</h3>
+                <p>Nice crisp exterior with fluffy interior, perfect for your breakfast.</p>
+            </div>
+            <div class="classics">
+                <img src="images/plainMuffin.jpg">
+                <h3>Muffin</h3>
+                <p>Simple yet satisfying flavor that pairs well with your favorite spreads.</p>
+            </div>
+            <div class="classics">
+                <img src="images/cookie.jpg">
+                <h3>Choco Chip Cookies</h3>
+                <p>Buttery dough and decadent chocolate chips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--faq-->
+    <section class="faqSection">
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="storeInfo">
+                <a href="index.html">
+                    <img class="logoFooter" src="images/logoFooter.png" alt="logo">
+                </a>
+                <h4>
+                    Lorem ipsum dolor amet consecto adi pisicing elit <br/>
+                    ed eiusm tempor incidid unt labore dolore.
+                </h4>
+                <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>  Kamalpokhari, Kathmandu</p>
+                <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 01-4987345</p>
+                <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> bakemandu@gmail.com</p>
+            </div>
+            <div class="storeLinks">
+                <h2>Our Store</h2>
+                <ul>
+                    <li><a href="html/blog.html">Menu</a></li>
+                    <li><a href="html/products.html">About</a></li>
+                    <li><a href="html/research.html">FAQ</a></li>
+                    <li><a href="html/aboutus.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="usefulLinks">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="html/blog.html">Menu</a></li>
+                    <li><a href="html/products.html">About</a></li>
+                    <li><a href="html/research.html">FAQ</a></li>
+                    <li><a href="html/aboutus.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="subscription">
+                <h2>Don't miss updates from us!</h2>
+                <h5>
+                    Get regular email subscription to festival discounts. <br/>
+                    Subscribe for exclusive offers.
+                </h5>
+                <input type="email" id="email" placeholder="Enter your email address">
+                <button class="subBtn" onclick="subscribe()">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- external javascript -->
+    <script src="js/subscribe.js"></script>
+
+</body>
+</html>
