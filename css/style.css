@@ -95,19 +95,19 @@ header {
     margin-bottom: 2%;
 }
 
-.storeLinks h2 {
+.storeLinks h3 {
     margin-bottom: 20%;
 }
 
-.usefulLinks h2 {
+.usefulLinks h3 {
     margin-bottom: 16%;
 }
 
-.subscription h2{
-    margin-bottom: 10%;
+.subscription h3{
+    margin-bottom: 8%;
 }
 
-.subscription h5{
+.subscription p{
     margin-bottom: 3%;
 }
 
