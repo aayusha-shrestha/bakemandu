@@ -1,0 +1,137 @@
+/* external css */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* css for navbar */
+.navcontent li a {
+    font-size: 20px;
+    color: rgb(33, 32, 32);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+    box-shadow: 20px, 20px black;
+}
+
+.navcontent {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    
+}
+
+.navcontent li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navcontent li a:hover {
+    color: #695343;
+}
+
+.logo {
+    margin-right: 630px;
+    height: 110px;
+}
+
+.navcontent .active a {
+    color:#6F4E37;
+}
+
+/* css for footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:baseline;
+    margin-top: 50px;
+    width: 100%;
+    font-weight: 200;
+    background-color: #695343;
+    text-align: left;
+    padding: 34px 0;
+    color:rgba(255, 255, 255, 0.649);
+    font-weight: 100;
+}
+
+.logoFooter {
+    height: 80px;
+    width: 80px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.649);
+}
+
+.footer a:hover{
+    color:#28292b;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer li {
+    margin-bottom: 8%;
+}
+
+.storeInfo h4 {
+    margin: 6% 0;
+}
+
+.storeInfo p {
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+
+.storeLinks h2 {
+    margin-bottom: 20%;
+}
+
+.usefulLinks h2 {
+    margin-bottom: 16%;
+}
+
+.subscription h2{
+    margin-bottom: 10%;
+}
+
+.subscription h5{
+    margin-bottom: 3%;
+}
+
+input[type=email] {
+    padding: 8px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.subBtn {
+    text-decoration: none;
+    border: 1px solid #6F4E37;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+    padding: 8px 18px;
+    color: black;
+}
+
+.subBtn:hover {
+    color: white;
+    background-color: #6F4E37;
+    transition: .3s;
+    cursor: pointer;
+}
