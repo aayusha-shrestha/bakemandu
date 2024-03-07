@@ -13,18 +13,18 @@
     <!--internal CSS-->
     <style>
         /* landing section */
-        .landingContainer {
+        .container {
             display: flex;
             margin-top: 140px;
         }
 
-        .intro {
+        .containerBody {
             width: 570px;
             margin-left: 120px;
             text-align: left;
         }
 
-        .intro h2 {
+        .containerBody h2 {
             font-size: 70px;
             margin-bottom: 20px;
         }
@@ -45,7 +45,7 @@
             transition: .3s;
         }
 
-        .intro p {
+        .containerBody p {
             margin-bottom: 6px;
             font-size: 20px;
         }
@@ -62,12 +62,13 @@
 
         /* classics section */
         .classicSection {
-            padding: 80px 0;
+            padding-top: 80px;
             color:#6F4E37;
         }
 
         .classicItems {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin-top: 40px;
         }
@@ -107,6 +108,40 @@
             font-size: 15px;
             line-height: 25px;
         }
+
+        /* faq section */
+        .faqImg {
+            width: 725px;
+            height: 621px;
+        }
+
+        .faqImg img {
+            height: 100%;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+            .mainImg img{
+                margin-left: 40px;
+            }
+            .containerBody {
+                margin-top: 170px;
+                flex-wrap: wrap;
+            }
+            .containerBody h2 {
+                padding-bottom: 24px;
+            }
+            .containerBody p {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .tasteBtn a {
+                font-size: 36px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -126,24 +161,22 @@
         </nav>
     </header>
 
-    <!--Intro-->
-    <section class="landingPage">
-        <div class="landingContainer">
-            <div class="intro">
-                <h2>
-                    <span style="color:#6F4E37">DELIGHT IN</span>
-                    <br/>
-                    EVERY BITE
-                </h2>
-                <p>From citrus to spice and chewy to crunchy,</p>
-                <p>we have crowd-pleasing snacks for every craving.</p><br><br>
-                <div class="tasteBtn">
-                    <a href="html/menu.html">TASTE</a>
-                </div>
+    <!--Hero Section-->
+    <section class="container">
+        <div class="containerBody">
+            <h2>
+                <span style="color:#6F4E37">DELIGHT IN</span>
+                <br/>
+                EVERY BITE
+            </h2>
+            <p>From citrus to spice and chewy to crunchy,</p>
+            <p>we have crowd-pleasing snacks for every craving.</p><br><br>
+            <div class="tasteBtn">
+                <a href="html/menu.html">TASTE</a>
             </div>
-            <div class="mainImg">
-                <img src="images/bread.jpg">
-            </div>
+        </div>
+        <div class="mainImg">
+            <img src="images/bread.jpg">
         </div>
     </section>
 
@@ -175,8 +208,18 @@
     </section>
 
     <!--faq-->
-    <section class="faqSection">
-
+    <section class="container">
+        <div class="containerBody">
+            <h2><span style="color:#6F4E37">FAQs</span></h2>
+            <p>You have questions.</p>
+            <p>We have answers.</p><br><br>
+            <div class="faq">
+                
+            </div>
+        </div>
+        <div class="faqImg">
+            <img src="images/cupcake.jpg">
+        </div>
     </section>
 
     <!-- Footer -->
