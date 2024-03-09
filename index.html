@@ -10,139 +10,7 @@
     <!--external CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!--internal CSS-->
-    <style>
-        /* landing section */
-        .container {
-            display: flex;
-            margin-top: 140px;
-        }
-
-        .containerBody {
-            width: 570px;
-            margin-left: 120px;
-            text-align: left;
-        }
-
-        .containerBody h2 {
-            font-size: 70px;
-            margin-bottom: 20px;
-        }
-
-        .tasteBtn a{
-            text-decoration: none;
-            border: 1px solid #6F4E37;
-            border-radius: 22px;
-            background-color: white;
-            font-size: 16px;
-            padding: 12px 18px;
-            color: black;
-        }
-
-        .tasteBtn a:hover {
-            color: white;
-            background-color: #6F4E37;
-            transition: .3s;
-        }
-
-        .containerBody p {
-            margin-bottom: 6px;
-            font-size: 20px;
-        }
-
-        .mainImg {
-            width: 723px;
-            height: 420px;
-        }
-
-        .mainImg img {
-            height: 100%;
-            width: 100%;
-        }
-
-        /* classics section */
-        .classicSection {
-            padding-top: 80px;
-            color:#6F4E37;
-        }
-
-        .classicItems {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        .classics {
-            height: 320px;
-            width: 300px;
-            padding: 20px 25px;
-            margin: 20px;
-            text-align: center;
-            box-sizing: border-box;
-            color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .classics img {
-            height: 200px;
-            width: 250px;
-            cursor: pointer;
-            transition: .3s all;
-        }
-
-        .classics img:hover {
-            transform: scale(1.05);
-        }
-
-        .classics h3 {
-            margin-top: 20px;
-            margin-bottom: 12px;
-            color: black;
-        }
-
-        .classics p {
-            width: 220px;
-            font-size: 15px;
-            line-height: 25px;
-        }
-
-        /* faq section */
-        .faqImg {
-            width: 725px;
-            height: 621px;
-        }
-
-        .faqImg img {
-            height: 100%;
-            width: 100%;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .container {
-                flex-direction: column-reverse;
-            }
-            .mainImg img{
-                margin-left: 40px;
-            }
-            .containerBody {
-                margin-top: 170px;
-                flex-wrap: wrap;
-            }
-            .containerBody h2 {
-                padding-bottom: 24px;
-            }
-            .containerBody p {
-                font-size: 40px;
-                margin-bottom: 20px;
-            }
-            .tasteBtn a {
-                font-size: 36px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 <body>
     <!--Nav Bar-->
@@ -152,7 +20,7 @@
         </a>
         <nav>
             <ul class="navcontent">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="activeNav"><a href="index.html">Home</a></li>
                 <li><a href="html/menu.html">Menu</a></li>
                 <li><a href="html/about.html">About</a></li>
                 <li><a href="html/faq.html">FAQ</a></li>
@@ -213,12 +81,98 @@
             <h2><span style="color:#6F4E37">FAQs</span></h2>
             <p>You have questions.</p>
             <p>We have answers.</p><br><br>
-            <div class="faq">
-                
+            <!--faqs -->
+            <div class = "faqs">
+                <div class = "faq">
+                    <button class = "ques">
+                        Do your products contain allergens?
+                        <i class = "icon fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class = "answer">
+                        <p>All of our products are free from: tree nuts, soy, fish, shellfish, sesame. </p>
+                    </div>
+                </div>
+                <div class = "faq">
+                    <button class = "ques">
+                        Are you available internationally?
+                        <i class="icon fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="answer">
+                        <p>We are currently only available within Nepal, but we are working diligently to grow into new regions. Stay tuned!</p>
+                    </div>
+                </div>
+                <div class = "faq">
+                    <button class = "ques">
+                        How should your products be stored?
+                        <i class="icon fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class = "answer">
+                        <p>Our cookies and breakfast mixes should be stored in a dry, cool environment, such as a pantry or cupboard.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="faqImg">
-            <img src="images/cupcake.jpg">
+            <img src="images/sand.jpg" alt="faq">
+        </div>
+    </section>
+
+    <!--review section-->
+    <section id="review">
+        <h4 style="text-align: center; font-size: 40px; color:#6F4E37">Let customers speak for us</h4>
+        <div class="reviewContainer">
+            <div class="swiper reviewSlider">
+                <div class="swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="swiper-slide reviewSlide">
+                        <div class="reviewContent activeReview">
+                            <p class="reviewText">
+                            Im happy that I picked Bakemandu for my friend's birthday. Best one I've had. I truly recommend for you to try their delicious desserts at least once.
+                            </p>
+                            <h4>John Harta</h4>
+                            <div class="reviewControl">
+                                <button class="reviewBtn activeReview" index="0"><img src="images/ppl1.jpg" alt="john"></button>
+                                <button class="reviewBtn" index="1"><img src="images/ppl3.jpg" alt="dane"></button>
+                                <button class="reviewBtn" index="2"><img src="images/ppl2.jpg" alt="anna"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide reviewSlide">
+                        <div class="reviewContent">
+                            <p class="reviewText">
+                            The star of Bakemandu is undoubtedly their assortment of traditional Nepali pastries and bread. Each item is crafted with care and expertise, showcasing the diverse culinary heritage of the region. 
+                            </p>
+                            <h4>Dane Abel</h4>
+                            <div class="reviewControl">
+                                <button class="reviewBtn" index="0"><img src="images/ppl1.jpg" alt="john"></button>
+                                <button class="reviewBtn activeReview" index="1"><img src="images/ppl3.jpg" alt="dane"></button>
+                                <button class="reviewBtn" index="2"><img src="images/ppl2.jpg" alt="anna"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="swiper-slide reviewSlide">
+                        <div class="reviewContent">
+                            <p class="reviewText">
+                            Such a gem! Not only are the pastries and donuts incredible, you cannot beat the prices and their allergens-free goods! Get here ASAP!
+                            </p>
+                            <h4>Anna Imelda</h4>
+                            <div class="reviewControl">
+                                <button class="reviewBtn" index="0"><img src="images/ppl1.jpg" alt="john"></button>
+                                <button class="reviewBtn" index="1"><img src="images/ppl3.jpg" alt="dane"></button>
+                                <button class="reviewBtn activeReview" index="2"><img src="images/ppl2.jpg" alt="anna"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-end -->
+                </div>
+                <div class="reviewSlider-control"> 
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>    
         </div>
     </section>
 
@@ -267,8 +221,11 @@
         </div>
     </footer>
 
-    <!-- external javascript -->
-    <script src="js/subscribe.js"></script>
+    <!-- external js -->
+    <script src = "js/faq.js"></script>
+    <script src = "js/subscribe.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
 
 </body>
 </html>
