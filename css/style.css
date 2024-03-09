@@ -308,15 +308,15 @@ input[type=email] {
 }
 
 /* review section */
-
 #review {
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 .reviewContainer {
     font-size: 26px;
     max-width: 1240px;
     padding: 0 60px;
+    margin-left: 150px;
 }
 
 @media (max-width: 1440px) {
