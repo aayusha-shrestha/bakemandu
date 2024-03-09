@@ -309,7 +309,7 @@ input[type=email] {
 
 /* review section */
 #review {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .reviewContainer {
@@ -401,6 +401,52 @@ input[type=email] {
 .galleryVid {
     display: flex;
     justify-content: space-evenly;
+}
+
+/* team section */
+.teamSection {
+    margin-bottom: 120px;
+}
+
+.teamContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 55px 0;
+}
+
+.members {
+    position: relative;
+    /* height: 370px; */
+}
+
+.members img {
+    width: 370px;
+    height: 370px;
+}
+
+.overlay {
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    /* opacity: 0; */
+    transition: .5s ease;
+    background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+}
+
+.members:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    text-align: left;
 }
 
 /* media queries */
