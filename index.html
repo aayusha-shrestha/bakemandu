@@ -75,6 +75,49 @@
         </div>
     </section>
 
+    <!--info section-->
+    <section class="container">
+        <div class="infoImg" id="infoImg">
+            <img src="images/strawberrycake.jpg">
+        </div>
+        <script>
+            var images = ['images/strawberrycake.jpg', 'images/whitecake.jpg', 'images/easter.jpg'];
+            var x = 0;
+            var imgs = document.getElementById('infoImg');
+            setInterval(slideshow, 2000);
+            function slideshow() {
+                if (x < images.length) {
+                    x = x + 1;
+                } else {
+                    x = 1;
+                }
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+            }
+        </script>
+        <div class="containerBody">
+            <h2><span style="color:#6F4E37">For every occasion</span></h2>
+            <p>We've got you covered for any holiday, special occasion,</p>
+            <p>or cause for celebration.</p><br><br>
+            <div class = "infoTab">
+                <p class = "infoTitle activeTitle" onclick="viewInfo('overview')">Overview</p>
+                <p class = "infoTitle" onclick="viewInfo('opening')">Opening Hours</p>
+                <p class = "infoTitle" onclick="viewInfo('delivery')">Delivery</p>
+            </div>
+            <div class = "infoContent activeContent" id="overview">
+                <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
+            </div>
+            <div class = "infoContent" id="opening">
+                <p>7:00-8:30</p>
+            </div>
+            <div class = "infoContent" id="delivery">
+                <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
+            </div>
+            <div class="tasteBtn">
+                <a href="html/menu.html">Explore</a>
+            </div>
+        </div>
+    </section>
+
     <!--menu section-->
     <h1 class="menuTitle">From Our Kitchen</h1>
     <div class="row">
@@ -153,49 +196,6 @@
             </div>
         </div>
     </div>
-
-    <!--info section-->
-    <section class="container">
-        <div class="infoImg" id="infoImg">
-            <img src="images/strawberrycake.jpg">
-        </div>
-        <script>
-            var images = ['images/strawberrycake.jpg', 'images/whitecake.jpg', 'images/easter.jpg'];
-            var x = 0;
-            var imgs = document.getElementById('infoImg');
-            setInterval(slideshow, 2000);
-            function slideshow() {
-                if (x < images.length) {
-                    x = x + 1;
-                } else {
-                    x = 1;
-                }
-            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
-            }
-        </script>
-        <div class="containerBody">
-            <h2><span style="color:#6F4E37">For every occasion</span></h2>
-            <p>We've got you covered for any holiday, special occasion,</p>
-            <p>or cause for celebration.</p><br><br>
-            <div class = "infoTab">
-                <p class = "infoTitle activeTitle" onclick="viewInfo('overview')">Overview</p>
-                <p class = "infoTitle" onclick="viewInfo('opening')">Opening Hours</p>
-                <p class = "infoTitle" onclick="viewInfo('delivery')">Delivery</p>
-            </div>
-            <div class = "infoContent activeContent" id="overview">
-                <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
-            </div>
-            <div class = "infoContent" id="opening">
-                <p>7:00-8:30</p>
-            </div>
-            <div class = "infoContent" id="delivery">
-                <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
-            </div>
-            <div class="tasteBtn">
-                <a href="html/menu.html">Explore</a>
-            </div>
-        </div>
-    </section>
 
     <!--faq-->
     <section class="container">
@@ -368,9 +368,9 @@
                     Contact us for nationwide delivery or <br/>
                     local, in-store pick up.
                 </h4>
-                <p><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>  Kamalpokhari, Kathmandu</p>
-                <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 01-4987345</p>
-                <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> bakemandu@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>  Kamalpokhari, Kathmandu</p>
+                <p><i class="fa-solid fa-phone"></i> 01-4987345</p>
+                <p><i class="fa-solid fa-envelope"></i> bakemandu@gmail.com</p>
             </div>
             <div class="storeLinks">
                 <h3>Our Store</h3>
