@@ -46,6 +46,17 @@ header {
     color:#6F4E37;
 }
 
+@media only screen and (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        left:280px;
+    }
+
+    .navcontent li {
+        display: block;
+    }
+}
+
 /* css for footer */
 .footer {
     display: flex;
@@ -133,18 +144,6 @@ input[type=email] {
     background-color: #6F4E37;
     transition: .3s;
     cursor: pointer;
-}
-
-/* media queries */
-@media only screen and (max-width: 700px) {
-    nav ul {
-        position: absolute;
-        left:280px;
-    }
-
-    .navcontent li {
-        display: block;
-    }
 }
 
 /* landing section */
@@ -242,6 +241,44 @@ input[type=email] {
     width: 220px;
     font-size: 15px;
     line-height: 25px;
+}
+
+/* info section */
+.infoImg {
+    padding-left: 120px;
+}
+
+.infoImg img {
+    width: 565px;
+    height: 651px;
+}
+
+.infoTab {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.infoTitle:hover {
+    border-style: groove;
+    border-color: #6F4E37;
+    border-width: 0 0 2px 0;
+}
+
+.infoTitle.activeTitle {
+    border-style: groove;
+    border-color: #6F4E37;
+    border-width: 0 0 2px 0;
+}
+
+.infoContent {
+    display: none;
+}
+
+.infoContent.activeContent {
+    display: block;
 }
 
 /* faq section */
@@ -417,7 +454,7 @@ input[type=email] {
 
 .members {
     position: relative;
-    /* height: 370px; */
+    height: 370px;
 }
 
 .members img {
@@ -427,11 +464,11 @@ input[type=email] {
 
 .overlay {
     position: absolute;
-    top: 60%;
+    top: 70%;
     bottom: 0;
-    left: 10%;
-    right: 10%;
-    /* opacity: 0; */
+    left: 0;
+    right: 0;
+    opacity: 0;
     transition: .5s ease;
     background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
 }
@@ -440,7 +477,7 @@ input[type=email] {
     opacity: 1;
 }
 
-.overlay h3 {
+.overlay h3{
     color: white;
     font-size: 20px;
     position: absolute;
@@ -449,8 +486,7 @@ input[type=email] {
     text-align: left;
 }
 
-/* media queries */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .container {
         flex-direction: column-reverse;
     }

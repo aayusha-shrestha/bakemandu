@@ -53,24 +53,53 @@
         <h1 style="text-align: center; font-size: 50px;">OUR CLASSICS</h1>
         <div class="classicItems">
             <div class="classics">
-                <img src="images/tiramisu3.jpg">
+                <a href="html/menu.html"><img src="images/tiramisu3.jpg"></a>
                 <h3>Tiramisu</h3>
                 <p>Perfect combination of light, but somehow also rich and decadent. </p>
             </div>
             <div class="classics">
-                <img src="images/waffle.jpg">
+                <a href="html/menu.html"><img src="images/waffle.jpg"></a>
                 <h3>Waffle</h3>
                 <p>Nice crisp exterior with fluffy interior, perfect for your breakfast.</p>
             </div>
             <div class="classics">
-                <img src="images/plainMuffin.jpg">
+                <a href="html/menu.html"><img src="images/plainMuffin.jpg"></a>
                 <h3>Muffin</h3>
                 <p>Simple yet satisfying flavor that pairs well with your favorite spreads.</p>
             </div>
             <div class="classics">
-                <img src="images/cookie.jpg">
+                <a href="html/menu.html"><img src="images/cookie.jpg"></a>
                 <h3>Choco Chip Cookies</h3>
                 <p>Buttery dough and decadent chocolate chips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--info section-->
+    <section class="container">
+        <div class="infoImg">
+            <img src="images/strawberrycake.jpg">
+        </div>
+        <div class="containerBody">
+            <h2><span style="color:#6F4E37">For every occasion</span></h2>
+            <p>We've got you covered for any holiday, special occasion,</p>
+            <p>or cause for celebration.</p><br><br>
+            <div class = "infoTab">
+                <p class = "infoTitle activeTitle" onclick="viewInfo('overview')">Overview</p>
+                <p class = "infoTitle" onclick="viewInfo('opening')">Opening Hours</p>
+                <p class = "infoTitle" onclick="viewInfo('delivery')">Delivery</p>
+            </div>
+            <div class = "infoContent activeContent" id="overview">
+                <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
+            </div>
+            <div class = "infoContent" id="opening">
+                <p>7:00-8:30</p>
+            </div>
+            <div class = "infoContent" id="delivery">
+                <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
+            </div>
+            <div class="tasteBtn">
+                <a href="html/menu.html">View More</a>
             </div>
         </div>
     </section>
@@ -214,7 +243,7 @@
                     <h3 class="text">
                         Michael Smith <br/>
                         Executive Chef <br/>
-                        2015
+                        2015 <br/>
                     </h3>
                 </div>
             </div>
@@ -287,6 +316,7 @@
     </footer>
 
     <!-- external js -->
+    <script src = "js/viewInfo.js"></script>
     <script src = "js/faq.js"></script>
     <script src = "js/subscribe.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
