@@ -243,6 +243,76 @@ input[type=email] {
     line-height: 25px;
 }
 
+/* menu */
+.menuTitle {
+    text-align: center;
+    padding: 12px 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 55px 0;
+}
+
+.card {
+    width: 340px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card img:hover {
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.productImage img {
+    height: 400px;
+    width: 100%;
+}
+
+.productInfo {
+    text-align: left;
+    margin: 12px 12px;
+}
+
+.productInfo .productName {
+    color: #28292b;
+    font-weight: bold;
+}
+
+.productInfo .price {
+    font-size: 15px;
+    color: #28292b;
+}
+
+.deletedPrice {
+    color: #a1a1a1;
+}
+
+.viewMoreContainer {
+    text-align: center;
+}
+
+.viewMoreBtn {
+    position: inherit;
+    text-decoration: none;
+    border: 1px solid #6F4E37;
+    border-radius: 22px;
+    background-color: white;
+    font-size: 14px;
+    padding: 12px 18px;
+    color: black;
+}
+
+.viewMoreBtn:hover {
+    color: white;
+    background-color: #6F4E37;
+    transition: .3s;
+    cursor: pointer;
+}
+
 /* info section */
 .infoImg {
     padding-left: 120px;

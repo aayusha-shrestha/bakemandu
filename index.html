@@ -75,6 +75,99 @@
         </div>
     </section>
 
+    <!--menu section-->
+    <h1 class="menuTitle">From Our Kitchen</h1>
+    <div class="row">
+        <div class="card">
+            <div class="productImage">
+                <a href="../html/productDwarfJade.html">
+                    <img src="../images/cinnamon.jpg" alt="cinnamonRolls">
+                </a>
+            </div>
+            <div class="productInfo">
+                <h4 class="productName">Cinnamon Rolls</h4>
+                <p class="price"><del class="deletedPrice"> Rs 150 </del> Rs 120 </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="productImage">
+                <a href="../html/productSatsukiAzalea.html">
+                    <img src="../images/cookie.jpg" alt="cookies">
+                </a>
+            </div>
+            <div class="productInfo">
+                <h4 class="productName">Choco Chip Cookies</h4>
+                <p class="price">Rs 200</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="productImage">
+                <a href="../html/productChineseElm.html">
+                    <img src="../images/cheesecake.jpg" alt="cheesecake">
+                </a>
+            </div>
+            <div class="productInfo">
+                <h4 class="productName">Cheesecake</h4>
+                <p class="price">Rs 400</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card">
+            <div class="productImage">
+                <a href="../html/productPonytailPalm.html">
+                    <img src="../images/muffin.jpg" alt="muffin">
+                </a>
+            </div>
+            <div class="productInfo">
+                <h4 class="productName">Choco Muffin</h4>
+                <p class="price">Rs 80 </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="productImage">
+                <a href="../html/productGinsengFicus.html">
+                    <img src="../images/waffle.jpg" alt="waffle">
+                </a>
+            </div>
+            <div class="productInfo">
+                <h4 class="productName">Waffle</h4>
+                <p class="price">Rs 450</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="productImage">
+                <a href="../html/productChineseSweetPlum.html">
+                    <img src="../images/tiramisu3.jpg" alt="tiramisu">
+                </a>
+            </div>
+            <div class="productInfo">
+                <h4 class="productName">Tiramisu</h4>
+                <p class="price"><del class="deletedPrice">Rs 560 </del> Rs 520 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- view more button -->
+    <div class="viewMoreContainer" id="viewMoreContainer">
+        <button class="viewMoreBtn" onclick="viewMore()">View More</button>
+    </div>
+    <!-- view more menu -->
+    <div class="row" id="viewMoreItems" style="display: none;">
+        <div class="card">
+            <div class="productImage">
+                <a href="../html/productPonytailPalm.html">
+                    <img src="../images/plainMuffin.jpg" alt="plainMuffin">
+                </a>
+            </div>
+            <div class="productInfo">
+                <h4 class="productName">Plain Muffin</h4>
+                <p class="price">Rs 60</p>
+            </div>
+        </div>
+    </div>
+
     <!--info section-->
     <section class="container">
         <div class="infoImg" id="infoImg">
@@ -92,7 +185,7 @@
                     x = 1;
                 }
             imgs.innerHTML = "<img src=" + images[x - 1] + ">";
-            }   
+            }
         </script>
         <div class="containerBody">
             <h2><span style="color:#6F4E37">For every occasion</span></h2>
