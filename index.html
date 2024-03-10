@@ -77,9 +77,23 @@
 
     <!--info section-->
     <section class="container">
-        <div class="infoImg">
+        <div class="infoImg" id="infoImg">
             <img src="images/strawberrycake.jpg">
         </div>
+        <script>
+            var images = ['images/strawberrycake.jpg', 'images/whitecake.jpg', 'images/easter.jpg'];
+            var x = 0;
+            var imgs = document.getElementById('infoImg');
+            setInterval(slideshow, 2000);
+            function slideshow() {
+                if (x < images.length) {
+                    x = x + 1;
+                } else {
+                    x = 1;
+                }
+            imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+            }   
+        </script>
         <div class="containerBody">
             <h2><span style="color:#6F4E37">For every occasion</span></h2>
             <p>We've got you covered for any holiday, special occasion,</p>
@@ -152,7 +166,6 @@
         <div class="reviewContainer">
             <div class="swiper reviewSlider">
                 <div class="swiper-wrapper">
-                    <!-- Slide-start -->
                     <div class="swiper-slide reviewSlide">
                         <div class="reviewContent activeReview">
                             <p class="reviewText">
@@ -166,8 +179,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Slide-end -->
-                    <!-- Slide-start -->
                     <div class="swiper-slide reviewSlide">
                         <div class="reviewContent">
                             <p class="reviewText">
@@ -181,8 +192,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Slide-end -->
-                    <!-- Slide-start -->
                     <div class="swiper-slide reviewSlide">
                         <div class="reviewContent">
                             <p class="reviewText">
@@ -196,7 +205,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Slide-end -->
                 </div>
                 <div class="reviewSlider-control"> 
                     <div class="swiper-pagination"></div>
@@ -208,11 +216,11 @@
     <!--gallery section-->
     <section class="gallery">
         <div class="galleryVid">
-            <video width="572" height="370" autoplay>
+            <video width="572" height="370" autoplay loop>
                 <source src="videos/vid1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <video width="572" height="370" autoplay>
+            <video width="572" height="370" autoplay loop>
                 <source src="videos/vid2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -297,10 +305,9 @@
             <div class="usefulLinks">
                 <h3>Useful Links</h3>
                 <ul>
-                    <li><a href="html/blog.html">Menu</a></li>
-                    <li><a href="html/products.html">About</a></li>
-                    <li><a href="html/research.html">FAQ</a></li>
-                    <li><a href="html/aboutus.html">Reviews</a></li>
+                    <li><a href="https://www.dominosugar.com/baking-tips-how-tos/basic-baking-tips" target="_blank">Tips</a></li>
+                    <li><a href="https://www.loveandlemons.com/baking-recipes/" target="_blank">Recipes</a></li>
+                    <li><a href="https://www.escoffier.edu/blog/baking-pastry/baking-basics-essential-baking-tips-and-techniques-for-beginners/" target="_blank">Basics</a></li>
                 </ul>
             </div>
             <div class="subscription">
