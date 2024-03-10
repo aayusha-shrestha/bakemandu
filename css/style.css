@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+ul {
+	list-style: none;
+}
+
 /* css for navbar */
 .navcontent li a {
     font-size: 20px;
@@ -60,22 +64,19 @@ header {
 /* css for footer */
 .footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items:baseline;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
     width: 100%;
     font-weight: 200;
     background-color: #695343;
-    text-align: left;
+    text-align: center;
     padding: 34px 0;
     color:rgba(255, 255, 255, 0.649);
-    font-weight: 100;
 }
 
 .logoFooter {
     height: 80px;
-    width: 80px;
 }
 
 .footer a{
@@ -87,37 +88,26 @@ header {
     color:#28292b;
 }
 
-.footer ul {
-    list-style-type: none;
-}
-
 .footer li {
-    margin-bottom: 8%;
-}
-
-.storeInfo h4 {
-    margin: 6% 0;
+    margin-bottom: 8px;
 }
 
 .storeInfo p {
     font-size: 14px;
-    margin-bottom: 2%;
-}
-
-.storeLinks h3 {
-    margin-bottom: 20%;
-}
-
-.usefulLinks h3 {
-    margin-bottom: 16%;
-}
-
-.subscription h3{
-    margin-bottom: 8%;
+    margin-bottom: 8px;
 }
 
 .subscription p{
     margin-bottom: 3%;
+}
+
+.storeInfo, .storeLinks, .usefulLinks, .subscription {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.storeInfo h3, .storeLinks h3, .usefulLinks h3, .subscription h3{
+    margin-bottom: 20px;
 }
 
 input[type=email] {
@@ -145,6 +135,26 @@ input[type=email] {
     transition: .3s;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 769px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+    .storeInfo, .storeLinks, .usefulLinks, .subscription {
+        margin-left: 20px;
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* .storeInfo, .storeLinks, .usefulLinks, .subscription {
+        width: 25%;
+    } */
+}
+
+
 
 /* landing section */
 .container {
@@ -212,8 +222,8 @@ input[type=email] {
 }
 
 .classics {
-    height: 320px;
-    width: 300px;
+    /* height: 320px;
+    width: 300px; */
     padding: 20px 25px;
     margin: 20px;
     text-align: center;
@@ -439,7 +449,7 @@ input[type=email] {
 }
 
 #review {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .reviewContainer {
@@ -532,21 +542,43 @@ input[type=email] {
     justify-content: space-evenly;
 }
 
-/* team section */
+/* ======= team section ======== */
 .teamSection {
     margin-bottom: 120px;
 }
 
+.teamSection h1{
+    margin-bottom:20px;
+    text-align: center;
+    font-size: 50px;
+    color: #6F4E37;
+}
+
 .teamContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 55px 0;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .teamContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+
+@media (min-width: 1025px) {
+    .teamContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .members {
     position: relative;
-    height: 370px;
+    margin-bottom: 30px;
 }
 
 .members img {
@@ -577,6 +609,8 @@ input[type=email] {
     left: 5%;
     text-align: left;
 }
+/* ======= team section ends ======== */
+
 
 @media only screen and (max-width: 600px) {
     .container {
