@@ -163,6 +163,10 @@ input[type=email] {
     margin-bottom: 20px;
 }
 
+.tasteBtn{
+    padding-top: 20px;
+}
+
 .tasteBtn a{
     text-decoration: none;
     border: 1px solid #6F4E37;
@@ -246,7 +250,8 @@ input[type=email] {
 /* menu */
 .menuTitle {
     text-align: center;
-    padding: 12px 0;
+    padding-top: 100px;
+    color: #6F4E37;
 }
 
 .row {
@@ -260,11 +265,6 @@ input[type=email] {
     width: 340px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card img:hover {
-    opacity: 0.7;
-    transition: .3s;
 }
 
 .productImage img {
@@ -416,14 +416,36 @@ input[type=email] {
 
 /* review section */
 #review {
-    padding: 80px 0;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 1440px) {
+    #review {
+        zoom: 150%;
+    }
+}
+
+@media (min-width: 2560px) {
+    #review {
+        zoom: 170%;
+    }
+}
+
+@media (min-width: 3860px) {
+    #review {
+        zoom: 250%;
+    }
+}
+
+#review {
+    padding: 20px 0;
 }
 
 .reviewContainer {
-    font-size: 26px;
+    font-size: 16px;
     max-width: 1240px;
     padding: 0 60px;
-    margin-left: 150px;
 }
 
 @media (max-width: 1440px) {
@@ -433,7 +455,7 @@ input[type=email] {
 }
 
 #review .reviewSlider {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 @media (max-width: 500px) {
@@ -446,7 +468,7 @@ input[type=email] {
     width: 600px;
     height: 280px;
     position: relative;
-    background-color: #6F4E37;
+    background-color: #6f4e37;
     margin-bottom: 30px;
 }
 
@@ -462,8 +484,8 @@ input[type=email] {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    padding: 30px 50px 50px 30px;
-    text-align: center; 
+    padding: 80px 30px 0 30px;
+    text-align: center;
 }
 
 .reviewContent p {
@@ -501,7 +523,7 @@ input[type=email] {
 }
 
 .reviewSlider-control .swiper-pagination .swiper-pagination-bullet-active {
-    background: #6F4E37;
+    background: #6f4e37;
 }
 
 /* gallery section */
