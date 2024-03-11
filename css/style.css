@@ -24,7 +24,6 @@ header {
     padding: 0 100px;
     box-sizing: border-box;
     box-shadow: 20px, 20px black;
-    position: fixed;
 }
 
 .navcontent {
@@ -155,10 +154,63 @@ input[type=email] {
     } */
 }
 
-
-
 /* landing section */
 .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+}
+
+.containerBody {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.containerBody h2 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.tasteBtn{
+    padding-top: 20px;
+}
+
+.tasteBtn a{
+    text-decoration: none;
+    border: 1px solid #6F4E37;
+    border-radius: 22px;
+    background-color: white;
+    font-size: 16px;
+    padding: 12px 18px;
+    color: black;
+}
+
+.tasteBtn a:hover {
+    color: white;
+    background-color: #6F4E37;
+    transition: .3s;
+}
+
+.containerBody p {
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.mainImg img {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+}
+
+/* .container {
     display: flex;
     margin-top: 140px;
 }
@@ -207,7 +259,7 @@ input[type=email] {
 .mainImg img {
     height: 100%;
     width: 100%;
-}
+} */
 
 /* classics section */
 .classicSection {
@@ -611,28 +663,4 @@ input[type=email] {
     text-align: left;
 }
 /* ======= team section ends ======== */
-
-
-@media only screen and (max-width: 600px) {
-    .container {
-        flex-direction: column-reverse;
-    }
-    .mainImg img{
-        margin-left: 40px;
-    }
-    .containerBody {
-        margin-top: 170px;
-        flex-wrap: wrap;
-    }
-    .containerBody h2 {
-        padding-bottom: 24px;
-    }
-    .containerBody p {
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-    .tasteBtn a {
-        font-size: 36px;
-    }
-}
 
