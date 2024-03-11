@@ -24,6 +24,7 @@ header {
     padding: 0 100px;
     box-sizing: border-box;
     box-shadow: 20px, 20px black;
+    position: fixed;
 }
 
 .navcontent {
