@@ -9,7 +9,7 @@ ul {
 	list-style: none;
 }
 
-/* css for navbar */
+/* navbar */
 .navcontent li a {
     font-size: 20px;
     color: rgb(33, 32, 32);
@@ -61,7 +61,7 @@ header {
     }
 }
 
-/* css for footer */
+/* footer */
 .footer {
     display: flex;
     flex-direction: column;
@@ -73,6 +73,14 @@ header {
     text-align: center;
     padding: 34px 0;
     color:rgba(255, 255, 255, 0.649);
+}
+
+@media only screen and (min-width: 769px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+    }
 }
 
 .logoFooter {
@@ -110,6 +118,13 @@ header {
     margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 769px) {
+    .storeInfo, .storeLinks, .usefulLinks, .subscription {
+        margin-left: 20px;
+        width: 75%;
+    }
+}
+
 input[type=email] {
     padding: 8px 18px;
     margin: 8px 0;
@@ -134,24 +149,6 @@ input[type=email] {
     background-color: #6F4E37;
     transition: .3s;
     cursor: pointer;
-}
-
-@media only screen and (min-width: 769px) {
-    .footer {
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: left;
-    }
-    .storeInfo, .storeLinks, .usefulLinks, .subscription {
-        margin-left: 20px;
-        width: 75%;
-    }
-}
-
-@media only screen and (min-width: 1025px) {
-    /* .storeInfo, .storeLinks, .usefulLinks, .subscription {
-        width: 25%;
-    } */
 }
 
 /* landing section */
@@ -292,26 +289,41 @@ input[type=email] {
 /* menu */
 .menuTitle {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 30px;
     color: #6F4E37;
 }
 
 .row {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 55px 0;
+    margin: 40px 0;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+
+@media (min-width: 1025px) {
+    .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .card {
-    width: 340px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
 }
 
 .productImage img {
+    width: 340px;
     height: 400px;
-    width: 100%;
 }
 
 .productInfo {
@@ -338,7 +350,6 @@ input[type=email] {
 }
 
 .viewMoreBtn {
-    position: inherit;
     text-decoration: none;
     border: 1px solid #6F4E37;
     border-radius: 22px;
@@ -354,71 +365,6 @@ input[type=email] {
     transition: .3s;
     cursor: pointer;
 }
-
-/* .menuTitle {
-    text-align: center;
-    padding-top: 100px;
-    color: #6F4E37;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 55px 0;
-}
-
-.card {
-    width: 340px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.productImage img {
-    height: 400px;
-    width: 100%;
-}
-
-.productInfo {
-    text-align: left;
-    margin: 12px 12px;
-}
-
-.productInfo .productName {
-    color: #28292b;
-    font-weight: bold;
-}
-
-.productInfo .price {
-    font-size: 15px;
-    color: #28292b;
-}
-
-.deletedPrice {
-    color: #a1a1a1;
-}
-
-.viewMoreContainer {
-    text-align: center;
-}
-
-.viewMoreBtn {
-    position: inherit;
-    text-decoration: none;
-    border: 1px solid #6F4E37;
-    border-radius: 22px;
-    background-color: white;
-    font-size: 14px;
-    padding: 12px 18px;
-    color: black;
-}
-
-.viewMoreBtn:hover {
-    color: white;
-    background-color: #6F4E37;
-    transition: .3s;
-    cursor: pointer;
-} */
 
 /* faq section */
 .faqs {
