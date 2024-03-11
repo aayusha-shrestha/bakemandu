@@ -161,6 +161,15 @@ input[type=email] {
     justify-content: space-evenly;
 }
 
+@media only screen and (min-width: 769px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+}
+
 .containerBody {
     text-align: left;
     margin-left: 20px;
@@ -201,66 +210,6 @@ input[type=email] {
     width: 100%;
 }
 
-@media only screen and (min-width: 769px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 100px;
-    }
-}
-
-/* .container {
-    display: flex;
-    margin-top: 140px;
-}
-
-.containerBody {
-    width: 570px;
-    margin-left: 120px;
-    text-align: left;
-}
-
-.containerBody h2 {
-    font-size: 70px;
-    margin-bottom: 20px;
-}
-
-.tasteBtn{
-    padding-top: 20px;
-}
-
-.tasteBtn a{
-    text-decoration: none;
-    border: 1px solid #6F4E37;
-    border-radius: 22px;
-    background-color: white;
-    font-size: 16px;
-    padding: 12px 18px;
-    color: black;
-}
-
-.tasteBtn a:hover {
-    color: white;
-    background-color: #6F4E37;
-    transition: .3s;
-}
-
-.containerBody p {
-    margin-bottom: 6px;
-    font-size: 20px;
-}
-
-.mainImg {
-    width: 723px;
-    height: 420px;
-}
-
-.mainImg img {
-    height: 100%;
-    width: 100%;
-} */
-
 /* classics section */
 .classicSection {
     padding-top: 80px;
@@ -275,8 +224,6 @@ input[type=email] {
 }
 
 .classics {
-    /* height: 320px;
-    width: 300px; */
     padding: 20px 25px;
     margin: 20px;
     text-align: center;
@@ -308,6 +255,38 @@ input[type=email] {
     width: 220px;
     font-size: 15px;
     line-height: 25px;
+}
+
+/* info section */
+.infoImg {
+    padding-left: 120px;
+}
+
+.infoImg img {
+    width: 565px;
+    height: 651px;
+}
+
+.infoTab {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.infoTitle:hover, .infoTitle.activeTitle {
+    border-style: groove;
+    border-color: #6F4E37;
+    border-width: 0 0 2px 0;
+}
+
+.infoContent {
+    display: none;
+}
+
+.infoContent.activeContent {
+    display: block;
 }
 
 /* menu */
@@ -376,43 +355,70 @@ input[type=email] {
     cursor: pointer;
 }
 
-/* info section */
-.infoImg {
-    padding-left: 120px;
+/* .menuTitle {
+    text-align: center;
+    padding-top: 100px;
+    color: #6F4E37;
 }
 
-.infoImg img {
-    width: 565px;
-    height: 651px;
-}
-
-.infoTab {
+.row {
     display: flex;
-    justify-content: space-between;
-    font-weight: 500;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 55px 0;
+}
+
+.card {
+    width: 340px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.productImage img {
+    height: 400px;
+    width: 100%;
+}
+
+.productInfo {
+    text-align: left;
+    margin: 12px 12px;
+}
+
+.productInfo .productName {
+    color: #28292b;
+    font-weight: bold;
+}
+
+.productInfo .price {
+    font-size: 15px;
+    color: #28292b;
+}
+
+.deletedPrice {
+    color: #a1a1a1;
+}
+
+.viewMoreContainer {
+    text-align: center;
+}
+
+.viewMoreBtn {
+    position: inherit;
+    text-decoration: none;
+    border: 1px solid #6F4E37;
+    border-radius: 22px;
+    background-color: white;
+    font-size: 14px;
+    padding: 12px 18px;
+    color: black;
+}
+
+.viewMoreBtn:hover {
+    color: white;
+    background-color: #6F4E37;
+    transition: .3s;
     cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.infoTitle:hover {
-    border-style: groove;
-    border-color: #6F4E37;
-    border-width: 0 0 2px 0;
-}
-
-.infoTitle.activeTitle {
-    border-style: groove;
-    border-color: #6F4E37;
-    border-width: 0 0 2px 0;
-}
-
-.infoContent {
-    display: none;
-}
-
-.infoContent.activeContent {
-    display: block;
-}
+} */
 
 /* faq section */
 .faqs {
@@ -592,7 +598,14 @@ input[type=email] {
 /* gallery section */
 .galleryVid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.galleryVid video {
+    min-width: 350px;
+    max-width: 572px;
+    height: 370px;
 }
 
 /* ======= team section ======== */
@@ -615,7 +628,6 @@ input[type=email] {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
     .teamContainer{
         flex-direction: row;
         flex-wrap: wrap;
