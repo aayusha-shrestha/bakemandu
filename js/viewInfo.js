@@ -1,6 +1,6 @@
 var infoTitle = document.getElementsByClassName('infoTitle');
 var infoContent = document.getElementsByClassName('infoContent');
-function viewInfo (titleName) {
+function viewInfo(titleName) {
     for(title of infoTitle) {
         title.classList.remove("activeTitle");
     }

@@ -91,11 +91,11 @@ header {
     margin-bottom: 20px;
 }
 
-.tasteBtn{
+.menuBtn{
     padding-top: 20px;
 }
 
-.tasteBtn a{
+.menuBtn a{
     border: 1px solid #6F4E37;
     border-radius: 22px;
     background-color: white;
@@ -104,7 +104,7 @@ header {
     color: black;
 }
 
-.tasteBtn a:hover {
+.menuBtn a:hover {
     color: white;
     background-color: #6F4E37;
     transition: .3s;
@@ -170,7 +170,7 @@ header {
 /* ======= classics ends ======== */
 
 /* ======= info section ======== */
-.infoImg {
+/* .infoImg {
     padding-left: 120px;
 }
 
@@ -191,6 +191,51 @@ header {
     border-style: groove;
     border-color: #6F4E37;
     border-width: 0 0 2px 0;
+}
+
+.infoContent {
+    display: none;
+}
+
+.infoContent.activeContent {
+    display: block;
+} */
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoImg img {
+    width: 100%;
+    height: 660px;
+}
+
+.infoBody {
+    text-align: center;
+}
+
+.infoBody h2 {
+    font-size: 50px;
+    color:#6F4E37;
+}
+
+.infoTab {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.infoTitle.activeTitle {
+    border-style: groove;
+    border-color: #6F4E37;
+    border-width: 0 0 2px 0;
+}
+
+.infoContent p{
+    padding: 0 6px 8px 6px;
 }
 
 .infoContent {
