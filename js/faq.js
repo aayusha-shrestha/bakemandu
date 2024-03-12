@@ -1,6 +1,6 @@
 const faqs = document.querySelectorAll('.faq');
 
-faqs.forEach(faq => {
+for(faq of faqs) {
     const icon = faq.querySelector('.icon');
     const answer = faq.querySelector('.answer');
 
@@ -8,4 +8,4 @@ faqs.forEach(faq => {
         icon.classList.toggle('active');
         answer.classList.toggle('active');
     })
-})
+}

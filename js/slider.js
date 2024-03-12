@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var TrandingSlider = new Swiper('.reviewSlider', {
+  var reviewSlider = new Swiper('.reviewSlider', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener('click', function () {
       var slideIndex = parseInt(button.getAttribute('index'));
 
-      TrandingSlider.slideTo(slideIndex);
+      reviewSlider.slideTo(slideIndex);
 
     });
   });
