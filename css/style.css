@@ -49,10 +49,6 @@ header {
     height: 110px;
 }
 
-.navcontent .activeNav a {
-    color:#6F4E37;
-}
-
 @media only screen and (max-width: 600px) {
     nav ul {
         position: absolute;
@@ -153,7 +149,7 @@ header {
 }
 
 .classics img:hover {
-    transform: scale(1.05);
+    opacity: 0.5;
 }
 
 .classics h3 {
@@ -524,11 +520,11 @@ header {
 
 /* ======= team section ======== */
 .teamSection {
-    margin-bottom: 120px;
+    margin: 70px 0;
 }
 
 .teamSection h1{
-    margin-bottom:20px;
+    margin-bottom:40px;
     text-align: center;
     font-size: 50px;
     color: #6F4E37;
