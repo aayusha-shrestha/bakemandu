@@ -14,12 +14,6 @@ a {
 }
 
 /* ======= nav ======== */
-.navcontent li a {
-    font-size: 20px;
-    color: rgb(33, 32, 32);
-    transition: all 0.3s;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -38,6 +32,12 @@ header {
 .navcontent li {
     display: inline-block;
     padding: 0 20px;
+}
+
+.navcontent li a {
+    font-size: 20px;
+    color: rgb(33, 32, 32);
+    transition: all 0.3s;
 }
 
 .navcontent li a:hover {
@@ -175,7 +175,7 @@ header {
     .infoContainer {
         flex-direction: row;
         justify-content: space-evenly;
-        padding: 0 118px;
+        padding: 40px 118px;
     }
 }
 
@@ -596,7 +596,7 @@ header {
     font-weight: 200;
     background-color: #695343;
     text-align: center;
-    padding: 35px 84px;
+    padding: 35px 88px;
     color:rgba(255, 255, 255, 0.649);
 }
 
