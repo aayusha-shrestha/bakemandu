@@ -170,59 +170,49 @@ header {
 /* ======= classics ends ======== */
 
 /* ======= info section ======== */
-/* .infoImg {
-    padding-left: 120px;
-}
-
-.infoImg img {
-    width: 565px;
-    height: 651px;
-}
-
-.infoTab {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 500;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.infoTitle:hover, .infoTitle.activeTitle {
-    border-style: groove;
-    border-color: #6F4E37;
-    border-width: 0 0 2px 0;
-}
-
-.infoContent {
-    display: none;
-}
-
-.infoContent.activeContent {
-    display: block;
-} */
-
 .infoContainer {
     display: flex;
     flex-direction: column;
 }
 
+@media (min-width: 1025px) {
+    .infoContainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 118px;
+    }
+}
+
 .infoImg img {
     width: 100%;
-    /* height: 660px; */
+}
+
+@media (min-width: 1025px) {
+    .infoImg img {
+        width: 565px;
+    } 
 }
 
 .infoBody {
     text-align: center;
 }
 
+@media (min-width: 1025px) {
+    .infoBody {
+        text-align: left;
+        padding-left: 100px;
+    }
+}
+
 .infoBody h2 {
     font-size: 55px;
     color:#6F4E37;
+    margin-bottom: 40px;
 }
 
 .infoBody p {
-    margin-bottom: 6px;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .infoTab {
@@ -234,6 +224,12 @@ header {
     padding-right: 50px;
 }
 
+@media (min-width: 1025px) {
+    .infoTab {
+        justify-content: space-between;
+    }
+}
+
 .infoTitle:hover, .infoTitle.activeTitle {
     border-style: groove;
     border-color: #6F4E37;
@@ -246,43 +242,6 @@ header {
 
 .infoContent.activeContent {
     display: block;
-}
-
-/* @media (min-width: 769px) and (max-width: 1024px) {
-    .infoContainer {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .infoImg img {
-        width: 400px;
-    } 
-    .infoBody {
-        text-align: left;
-        padding-right: 100px;
-    }
-    .infoTab {
-        justify-content: space-between;
-        padding: 0 50px;
-    }
-} */
-
-@media (min-width: 1025px) {
-    .infoContainer {
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 0 118px;
-    }
-    .infoImg img {
-        width: 565px;
-    } 
-    .infoBody {
-        text-align: left;
-        padding-left: 100px;
-    }
-    .infoTab {
-        justify-content: space-between;
-        /* padding-right: 50px; */
-    }
 }
 /* ======= info section ends ======== */
 
