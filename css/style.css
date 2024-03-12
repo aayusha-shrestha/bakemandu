@@ -411,6 +411,7 @@ input[type=email] {
 }
 
 .answer {
+    display: flex;
     max-height: 0;
     overflow: hidden;
 }
@@ -419,14 +420,10 @@ input[type=email] {
     max-height: fit-content;
 }
 
-.faqImg {
-    width: 700px;
-    height: 621px;
-}
-
-.faqImg img {
-    height: 100%;
-    width: 100%;
+.faqImg img{
+    width: 90%;
+    /* width: 700px;
+    height: 621px; */
 }
 
 /* review section */
