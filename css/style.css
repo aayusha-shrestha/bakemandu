@@ -421,9 +421,8 @@ input[type=email] {
 }
 
 .faqImg img{
-    width: 90%;
-    /* width: 700px;
-    height: 621px; */
+    width: 700px;
+    height: 621px;
 }
 
 /* review section */
