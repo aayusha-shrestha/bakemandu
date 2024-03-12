@@ -7,6 +7,5 @@ function viewInfo(titleName) {
     for(content of infoContent) {
         content.classList.remove("activeContent");
     }
-    document.getElementById(titleName).classList.add("activeTitle")
     document.getElementById(titleName).classList.add("activeContent");
 }
