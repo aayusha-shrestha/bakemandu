@@ -1,11 +1,11 @@
 const faqs = document.querySelectorAll('.faq');
 
-for(faq of faqs) {
-    const icon = faq.querySelector('.icon');
-    const answer = faq.querySelector('.answer');
+for(let faq of faqs) {
+    const icon = faq.querySelector('.faq__icon');
+    const answer = faq.querySelector('.faq__answer');
 
     faq.addEventListener('click', () => {
-        icon.classList.toggle('active');
-        answer.classList.toggle('active');
+        icon.classList.toggle('faq__icon--active');
+        answer.classList.toggle('faq__answer--active');
     })
 }

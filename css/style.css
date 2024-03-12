@@ -114,12 +114,12 @@ nav .fa-solid {
     }
 }
 
-.containerBody {
+.container__body {
     text-align: left;
     margin-left: 20px;
 }
 
-.containerBody h1 {
+.container__body h1 {
     text-align: left;
     font-size: 65px;
     margin-bottom: 20px;
@@ -145,7 +145,7 @@ nav .fa-solid {
     transition: .3s;
 }
 
-.containerBody p {
+.container__body p {
     margin-bottom: 6px;
     font-size: 20px;
 }
@@ -294,7 +294,7 @@ nav .fa-solid {
 /* ======= info section ends ======== */
 
 /* ======= menu ======== */
-.row {
+.menu-section__row {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -303,14 +303,14 @@ nav .fa-solid {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .row{
+    .menu-section__row {
         flex-direction: row;
         flex-wrap: wrap;
     }
 }
 
 @media (min-width: 1025px) {
-    .row{
+    .menu-section__row {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -322,35 +322,35 @@ nav .fa-solid {
     margin-bottom: 20px;
 }
 
-.productImage img {
+.product-image img {
     width: 340px;
     height: 400px;
 }
 
-.productInfo {
+.product-info {
     text-align: left;
     margin: 12px 12px;
 }
 
-.productInfo .productName {
+.product-info__name {
     color: #28292b;
     font-weight: bold;
 }
 
-.productInfo .price {
+.product-info__price {
     font-size: 15px;
     color: #28292b;
 }
 
-.deletedPrice {
+.deleted-price {
     color: #a1a1a1;
 }
 
-.viewMoreContainer {
+.view-more-container {
     text-align: center;
 }
 
-.viewMoreBtn {
+.view-more-container__btn {
     margin-bottom: 30px;
     text-decoration: none;
     border: 1px solid #6F4E37;
@@ -361,7 +361,7 @@ nav .fa-solid {
     color: black;
 }
 
-.viewMoreBtn:hover {
+.view-more-container__btn:hover {
     color: white;
     background-color: #6F4E37;
     transition: .3s;
@@ -387,7 +387,7 @@ nav .fa-solid {
     border: 1px solid #6F4E37;
 }
 
-.ques {
+.faq__question {
     background-color: #6F4E37;
     color: white;
     width: 100%;
@@ -399,12 +399,22 @@ nav .fa-solid {
     justify-content: space-between;
 }
 
-.ques:hover {
+.faq__question:hover {
     background-color: #B19470;
     transition: .3s;
 }
 
-.answer p {
+.faq__answer {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq__answer--active {
+    max-height: fit-content;
+}
+
+.faq__answer p {
     font-size: 15px;
     padding-top: 18px;
     padding-left: 12px;
@@ -412,22 +422,12 @@ nav .fa-solid {
     width: 480px;
 }
 
-.icon {
+.faq__icon {
     transition: transform .3s;
 }
 
-.icon.active {
+.faq__icon--active {
     transform: rotate(-180deg);
-}
-
-.answer {
-    display: flex;
-    max-height: 0;
-    overflow: hidden;
-}
-
-.answer.active {
-    max-height: fit-content;
 }
 
 .faqImg img {

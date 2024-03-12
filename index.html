@@ -9,8 +9,8 @@
     <title>Bakemandu</title>
     <!--external CSS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <!--nav bar-->
@@ -33,7 +33,7 @@
 
     <!--landing section-->
     <section class="container">
-        <div class="containerBody">
+        <div class="container__body">
             <h1>
                 DELIGHT IN <br/>
                 <span style="color:rgba(0, 0, 0, 0.912)">EVERY BITE</span>
@@ -110,118 +110,118 @@
     </section>
 
     <!--menu section-->
-    <section id="menu">
+    <section id="menu" class="menu-section">
         <h1 class="section__title">Gallery</h1>
-        <div class="row">
+        <div class="menu-section__row">
             <div class="card">
-                <div class="productImage">
+                <div class="product-image">
                     <img src="images/cinnamon.jpg" alt="cinnamonRolls">
                 </div>
-                <div class="productInfo">
-                    <h4 class="productName">Cinnamon Rolls</h4>
-                    <p class="price"><del class="deletedPrice"> Rs 150 </del> Rs 120 </p>
+                <div class="product-info">
+                    <h4 class=".product-info__name">Cinnamon Rolls</h4>
+                    <p class="product-info__price"><del class="deletedPrice"> Rs 150 </del> Rs 120 </p>
                 </div>
             </div>
             <div class="card">
-                <div class="productImage">
+                <div class="product-image">
                     <img src="images/cookie.jpg" alt="cookies">
                 </div>
-                <div class="productInfo">
-                    <h4 class="productName">Choco Chip Cookies</h4>
-                    <p class="price">Rs 200</p>
+                <div class="product-info">
+                    <h4 class=".product-info__name">Choco Chip Cookies</h4>
+                    <p class="product-info__price">Rs 200</p>
                 </div>
             </div>
             <div class="card">
-                <div class="productImage">
+                <div class="product-image">
                     <img src="images/cheesecake.jpg" alt="cheesecake">
                 </div>
-                <div class="productInfo">
-                    <h4 class="productName">Cheesecake</h4>
-                    <p class="price">Rs 400</p>
+                <div class="product-info">
+                    <h4 class=".product-info__name">Cheesecake</h4>
+                    <p class="product-info__price">Rs 400</p>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="menu-section__row">
             <div class="card">
-                <div class="productImage">
+                <div class="product-image">
                     <img src="images/muffin.jpg" alt="muffin">
                 </div>
-                <div class="productInfo">
-                    <h4 class="productName">Choco Muffin</h4>
-                    <p class="price">Rs 80 </p>
+                <div class="product-info">
+                    <h4 class=".product-info__name">Choco Muffin</h4>
+                    <p class="product-info__price">Rs 80 </p>
                 </div>
             </div>
             <div class="card">
-                <div class="productImage">
+                <div class="product-image">
                     <img src="images/waffle.jpg" alt="waffle">
                 </div>
-                <div class="productInfo">
-                    <h4 class="productName">Waffle</h4>
-                    <p class="price">Rs 450</p>
+                <div class="product-info">
+                    <h4 class=".product-info__name">Waffle</h4>
+                    <p class="product-info__price">Rs 450</p>
                 </div>
             </div>
             <div class="card">
-                <div class="productImage">
+                <div class="product-image">
                     <img src="images/tiramisu3.jpg" alt="tiramisu">
                 </div>
-                <div class="productInfo">
-                    <h4 class="productName">Tiramisu</h4>
-                    <p class="price"><del class="deletedPrice">Rs 560 </del> Rs 520 </p>
+                <div class="product-info">
+                    <h4 class=".product-info__name">Tiramisu</h4>
+                    <p class="product-info__price"><del class="deleted-price">Rs 560 </del> Rs 520 </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- view more button -->
-    <div class="viewMoreContainer" id="viewMoreContainer">
-        <button class="viewMoreBtn" onclick="viewMore()">View More</button>
+    <div class="view-more-container" >
+        <button class="view-more-container__btn" onclick="viewMore()">View More</button>
     </div>
     <!-- view more menu -->
-    <div class="row" id="viewMoreItems" style="display: none;">
+    <div class="menu-section__row" id="view-more-items" style="display: none;">
         <div class="card">
-            <div class="productImage">
+            <div class="product-image">
                 <img src="images/plainMuffin.jpg" alt="plainMuffin">
             </div>
-            <div class="productInfo">
-                <h4 class="productName">Plain Muffin</h4>
-                <p class="price">Rs 60</p>
+            <div class="product-info">
+                <h4 class=".product-info__name">Plain Muffin</h4>
+                <p class="product-info__price">Rs 60</p>
             </div>
         </div>
     </div>
 
     <!--faq-->
     <section class="container" id="faq">
-        <div class="containerBody">
+        <div class="container__body">
             <h1 class="section__title">FAQs</h1>
             <p>You have questions.</p>
             <p>We have answers.</p>
             <!--faqs -->
             <div class = "faqs">
                 <div class = "faq">
-                    <button class = "ques">
+                    <button class = "faq__question">
                         Do your products contain allergens?
-                        <i class = "icon fa-solid fa-chevron-down"></i>
+                        <i class = "faq__icon fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class = "answer">
+                    <div class = "faq__answer">
                         <p>All of our products are free from: tree nuts, soy, fish, shellfish, sesame. </p>
                     </div>
                 </div>
                 <div class = "faq">
-                    <button class = "ques">
+                    <button class = "faq__question">
                         Are you available internationally?
-                        <i class="icon fa-solid fa-chevron-down"></i>
+                        <i class="faq__icon fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="answer">
+                    <div class="faq__answer">
                         <p>We are currently only available within Nepal, but we are working diligently to grow into new regions. Stay tuned!</p>
                     </div>
                 </div>
                 <div class = "faq">
-                    <button class = "ques">
+                    <button class = "faq__question">
                         How should your products be stored?
-                        <i class="icon fa-solid fa-chevron-down"></i>
+                        <i class="faq__icon fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class = "answer">
+                    <div class = "faq__answer">
                         <p>Our cookies and breakfast mixes should be stored in a dry, cool environment, such as a pantry or cupboard.</p>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
 
     <!--review section-->
     <section id="review">
-        <h1>Let customers speak for us</h1>
+        <h1 class="section__title">Let customers speak for us</h1>
         <div class="reviewContainer">
             <div class="swiper reviewSlider">
                 <div class="swiper-wrapper">
