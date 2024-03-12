@@ -13,6 +13,13 @@ a {
     text-decoration: none;
 }
 
+.section__title {
+    margin-bottom:40px;
+    text-align: center;
+    font-size: 50px;
+    color: #6F4E37;
+}
+
 /* ======= nav ======== */
 header {
     display: flex;
@@ -31,26 +38,26 @@ header {
     height: 110px;
 }
 
-.navcontent {
+.nav-content {
     display: flex;
 }
 
 @media (max-width: 768px) {
-    .navcontent {
+    .nav-content {
         flex-direction: column;
     }
 }
 
-.navcontent li {
+.nav-content li {
     padding: 0 20px;
 }
 
-.navcontent li a {
+.nav-content li a {
     font-size: 20px;
     color: rgb(33, 32, 32);
 }
 
-.navcontent li a:hover {
+.nav-content li a:hover {
     color: #695343;
     transition: 0.3s;
 }
@@ -68,7 +75,7 @@ header {
         transition: right 0.6s;
     }
 
-    .navcontent li {
+    .nav-content li {
         margin:25px;
     }
 }
@@ -112,9 +119,11 @@ nav .fa-solid {
     margin-left: 20px;
 }
 
-.containerBody h2 {
+.containerBody h1 {
+    text-align: left;
     font-size: 65px;
     margin-bottom: 20px;
+    color: #6F4E37;
 }
 
 .menuBtn{
@@ -148,19 +157,24 @@ nav .fa-solid {
 /* ======= landing section ends ======== */
 
 /* ======= classics ======== */
-.classicSection {
+.classic-section {
     padding-top: 80px;
     color:#6F4E37;
 }
 
-.classicItems {
+.classic-section__title {
+    font-size: 50px;
+    text-align: center; 
+}
+
+.classic-section__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
 }
 
-.classics {
+.classic-section__item {
     padding: 20px 25px;
     margin: 20px;
     text-align: center;
@@ -171,24 +185,24 @@ nav .fa-solid {
     align-items: center;
 }
 
-.classics img {
+.classic-section__item img {
     height: 200px;
     width: 250px;
     cursor: pointer;
     transition: .3s all;
 }
 
-.classics img:hover {
+.classic-section__item img:hover {
     opacity: 0.5;
 }
 
-.classics h3 {
+.classic-section__item-heading {
     margin-top: 20px;
     margin-bottom: 12px;
     color: black;
 }
 
-.classics p {
+.classic-section__item-description {
     width: 220px;
     font-size: 15px;
     line-height: 25px;
@@ -231,7 +245,7 @@ nav .fa-solid {
 }
 
 .infoBody h2 {
-    font-size: 55px;
+    font-size: 50px;
     color:#6F4E37;
     margin-bottom: 40px;
 }
@@ -280,12 +294,6 @@ nav .fa-solid {
 /* ======= info section ends ======== */
 
 /* ======= menu ======== */
-.menuTitle {
-    text-align: center;
-    padding-top: 30px;
-    color: #6F4E37;
-}
-
 .row {
     display: flex;
     flex-direction: column;
@@ -458,6 +466,12 @@ nav .fa-solid {
     }
 }
 
+#review h1 {
+    font-size: 30px;
+    text-align: center;
+    color:#6F4E37
+}
+
 .reviewContainer {
     font-size: 16px;
     max-width: 1240px;
@@ -544,13 +558,13 @@ nav .fa-solid {
 /* ======= review section ends ======== */
 
 /* ======= gallery section ======== */
-.galleryVid {
+.gallery__video {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.galleryVid video {
+.gallery__video-content {
     min-width: 350px;
     max-width: 572px;
     height: 370px;
@@ -560,13 +574,6 @@ nav .fa-solid {
 /* ======= team section ======== */
 .team-section {
     margin: 70px 0;
-}
-
-.team-section__title {
-    margin-bottom:40px;
-    text-align: center;
-    font-size: 50px;
-    color: #6F4E37;
 }
 
 .team-section__container {

@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!--Nav Bar-->
+    <!--nav bar-->
     <header>
         <a href="index.html">
             <img class="logo" src="images/logo.png" alt="logo">
         </a>
         <nav>
-            <ul class="navcontent" id="sideMenu">
+            <ul class="nav-content" id="side-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -31,13 +31,13 @@
         </nav>
     </header>
 
-    <!--Landing Section-->
+    <!--landing section-->
     <section class="container">
         <div class="containerBody">
-            <h2>
-                <span style="color:#6F4E37">DELIGHT IN</span><br/>
-                EVERY BITE
-            </h2>
+            <h1>
+                DELIGHT IN <br/>
+                <span style="color:rgba(0, 0, 0, 0.912)">EVERY BITE</span>
+            </h1>
             <p>From citrus to spice and chewy to crunchy,</p>
             <p>we have crowd-pleasing snacks for every craving.</p><br><br>
             <div class="menuBtn">
@@ -50,32 +50,33 @@
     </section>
 
     <!--classics section-->
-    <section class="classicSection">
-        <h1 style="text-align: center; font-size: 50px;">OUR CLASSICS</h1>
-        <div class="classicItems">
-            <div class="classics">
+    <section class="classic-section">
+        <h2 class="classic-section__title">OUR CLASSICS</h2>
+        <div class="classic-section__items">
+             <div class="classic-section__item">
                 <a href="#menu"><img src="images/tira.jpg"></a>
-                <h3>Tiramisu</h3>
-                <p>Perfect combination of light, but somehow also rich and decadent. </p>
+                <h3 class="classic-section__item-heading">Tiramisu</h3>
+                <p class="classic-section__item-description">Perfect combination of light, but somehow also rich and decadent. </p>
             </div>
-            <div class="classics">
+             <div class="classic-section__item">
                 <a href="#menu"><img src="images/waf.jpg"></a>
-                <h3>Waffle</h3>
-                <p>Nice crisp exterior with fluffy interior, perfect for your breakfast.</p>
+                <h3 class="classic-section__item-heading">Waffle</h3>
+                <p class="classic-section__item-description">Nice crisp exterior with fluffy interior, perfect for your breakfast.</p>
             </div>
-            <div class="classics">
+             <div class="classic-section__item">
                 <a href="#menu"><img src="images/muf.jpg"></a>
-                <h3>Muffin</h3>
-                <p>Simple yet satisfying flavor that pairs well with your favorite spreads.</p>
+                <h3 class="classic-section__item-heading">Muffin</h3>
+                <p class="classic-section__item-description">Simple yet satisfying flavor that pairs well with your favorite spreads.</p>
             </div>
-            <div class="classics">
+             <div class="classic-section__item">
                 <a href="#menu"><img src="images/cook.jpg"></a>
-                <h3>Choco Chip Cookies</h3>
-                <p>Buttery dough and decadent chocolate chips.</p>
+                <h3 class="classic-section__item-heading">Choco Chip Cookies</h3>
+                <p class="classic-section__item-description">Buttery dough and decadent chocolate chips.</p>
             </div>
         </div>
     </section>
 
+    <!--info section-->
     <section class="infoSection">
         <div class="infoContainer">
             <div class="infoImg" id="infoImg">
@@ -110,7 +111,7 @@
 
     <!--menu section-->
     <section id="menu">
-        <h1 class="menuTitle">From Our Kitchen</h1>
+        <h1 class="section__title">Gallery</h1>
         <div class="row">
             <div class="card">
                 <div class="productImage">
@@ -192,7 +193,7 @@
     <!--faq-->
     <section class="container" id="faq">
         <div class="containerBody">
-            <h2><span style="color:#6F4E37">FAQs</span></h2>
+            <h1 class="section__title">FAQs</h1>
             <p>You have questions.</p>
             <p>We have answers.</p>
             <!--faqs -->
@@ -233,7 +234,7 @@
 
     <!--review section-->
     <section id="review">
-        <h4 style="text-align: center; font-size: 30px; color:#6F4E37">Let customers speak for us</h4>
+        <h1>Let customers speak for us</h1>
         <div class="reviewContainer">
             <div class="swiper reviewSlider">
                 <div class="swiper-wrapper">
@@ -286,27 +287,28 @@
 
     <!--gallery section-->
     <section class="gallery" id="about">
-        <div class="galleryVid">
-            <video controls autoplay>
+        <h1 class="section__title">Gallery</h1>
+        <div class="gallery__video">
+            <video class="gallery__video-content" controls autoplay>
                 <source src="videos/vid1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <video controls autoplay>
+            <video class="gallery__video-content" controls autoplay>
                 <source src="videos/vid2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="classicItems">
-            <div class="classics">
+        <div class="classic-section__items">
+            <div class="classic-section__item">
                 <img src="images/gallery5.jpg" alt="galleryphoto">
             </div>
-            <div class="classics">
+            <div class="classic-section__item">
                 <img src="images/gallery6.jpg" alt="galleryphoto">
             </div>
-            <div class="classics">
+            <div class="classic-section__item">
                 <img src="images/gallery7.jpg" alt="galleryphoto">
             </div>
-            <div class="classics">
+            <div class="classic-section__item">
                 <img src="images/gallery8.jpg" alt="galleryphoto">
             </div>
         </div>
@@ -314,7 +316,7 @@
 
     <!--team section-->
     <section class="team-section">
-        <h1 class="team-section__title">Meet Our Team</h1>
+        <h1 class="section__title">Meet Our Team</h1>
         <div class="team-section__container">
             <div class="team-section__member">
                 <img src="images/chef1.jpg" alt="team">
