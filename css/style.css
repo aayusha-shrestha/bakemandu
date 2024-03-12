@@ -558,18 +558,18 @@ nav .fa-solid {
 /* ======= gallery section ends ======== */
 
 /* ======= team section ======== */
-.teamSection {
+.team-section {
     margin: 70px 0;
 }
 
-.teamSection h1{
+.team-section__title {
     margin-bottom:40px;
     text-align: center;
     font-size: 50px;
     color: #6F4E37;
 }
 
-.teamContainer {
+.team-section__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -577,30 +577,30 @@ nav .fa-solid {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .teamContainer{
+    .team-section__container {
         flex-direction: row;
         flex-wrap: wrap;
     }
 }
 
 @media (min-width: 1025px) {
-    .teamContainer{
+    .team-section__container {
         flex-direction: row;
         flex-wrap: wrap;
     }
 }
 
-.members {
+.team-section__member {
     position: relative;
     margin-bottom: 30px;
 }
 
-.members img {
+.team-section__member img {
     width: 370px;
     height: 370px;
 }
 
-.overlay {
+.team-section__overlay {
     position: absolute;
     top: 70%;
     bottom: 0;
@@ -611,16 +611,15 @@ nav .fa-solid {
     background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
 }
 
-.members:hover .overlay {
+.team-section__member:hover .team-section__overlay {
     opacity: 1;
 }
 
-.overlay h3{
+.team-section__bio {
     color: white;
     font-size: 20px;
-    position: absolute;
-    bottom: 2%;
-    left: 5%;
+    padding-top: 20px;
+    padding-left: 10px;
     text-align: left;
 }
 /* ======= team section ends ======== */
