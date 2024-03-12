@@ -9,11 +9,14 @@ ul {
 	list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ======= nav ======== */
 .navcontent li a {
     font-size: 20px;
     color: rgb(33, 32, 32);
-    text-decoration: none;
     transition: all 0.3s;
 }
 
@@ -93,7 +96,6 @@ header {
 }
 
 .tasteBtn a{
-    text-decoration: none;
     border: 1px solid #6F4E37;
     border-radius: 22px;
     background-color: white;
@@ -555,11 +557,11 @@ header {
     font-weight: 200;
     background-color: #695343;
     text-align: center;
-    padding: 34px 0;
+    padding: 35px 84px;
     color:rgba(255, 255, 255, 0.649);
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
     .footer {
         flex-direction: row;
         justify-content: space-evenly;
@@ -572,7 +574,6 @@ header {
 }
 
 .footer a{
-    text-decoration: none;
     color:rgba(255, 255, 255, 0.649);
 }
 
@@ -602,7 +603,7 @@ header {
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
     .storeInfo, .storeLinks, .usefulLinks, .subscription {
         margin-left: 20px;
         width: 75%;
