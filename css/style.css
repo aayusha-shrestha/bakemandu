@@ -210,52 +210,52 @@ nav .fa-solid {
 /* ======= classics ends ======== */
 
 /* ======= info section ======== */
-.infoContainer {
+.info-section__container {
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 1200px) {
-    .infoContainer {
+    .info-section__container {
         flex-direction: row;
         justify-content: space-evenly;
         padding: 40px 118px;
     }
 }
 
-.infoImg img {
+.info-section__img img {
     width: 100%;
 }
 
 @media (min-width: 1200px) {
-    .infoImg img {
+    .info-section__img img {
         width: 565px;
     } 
 }
 
-.infoBody {
+.info-section__body {
     text-align: center;
 }
 
 @media (min-width: 1200px) {
-    .infoBody {
+    .info-section__body {
         text-align: left;
         padding-left: 100px;
     }
 }
 
-.infoBody h2 {
+.info-section__body h2 {
     font-size: 50px;
     color:#6F4E37;
     margin-bottom: 40px;
 }
 
-.infoBody p {
+.info-section__body p {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.infoTab {
+.info-section__tab {
     display: flex;
     justify-content: space-around;
     font-weight: bold;
@@ -265,29 +265,29 @@ nav .fa-solid {
 }
 
 @media (min-width: 1200px) {
-    .infoTab {
+    .info-section__tab {
         justify-content: space-between;
     }
 }
 
-.infoTitle:hover, .infoTitle.activeTitle {
+.tab__title:hover, .tab__title--active {
     border-style: groove;
     border-color: #6F4E37;
     border-width: 0 0 2px 0;
 }
 
-.infoContent {
+.tab__content {
     display: none;
     text-align: justify;
     padding: 0px 20px;
 }
 
-.infoContent.activeContent {
+.tab__content--active {
     display: block;
 }
 
 @media (min-width: 1200px) {
-    .infoContent {
+    .tab__content {
         padding: 0px;
     }
 }

@@ -77,32 +77,32 @@
     </section>
 
     <!--info section-->
-    <section class="infoSection">
-        <div class="infoContainer">
-            <div class="infoImg" id="infoImg">
+    <section class="info-section">
+        <div class="info-section__container">
+            <div class="info-section__img" id="info-img">
                 <img src="images/strawberrycake.jpg">
             </div>
-            <div class="infoBody">
+            <div class="info-section__body">
                 <h2>For Every Occasion</h2>
                 <p>
                     We've got you covered for any holiday, special occasion,<br/>
                     or cause for celebration.
                 </p>
-                <div class = "infoTab">
-                    <p class = "infoTitle overview activeTitle" onclick="viewInfo('overview')">Overview</p>
-                    <p class = "infoTitle opening" onclick="viewInfo('opening')">Opening Hours</p>
-                    <p class = "infoTitle delivery" onclick="viewInfo('delivery')">Delivery</p>
+                <div class="info-section__tab">
+                    <p class="tab__title tab__title--overview active-title" onclick="viewInfo('overview')">Overview</p>
+                    <p class="tab__title tab__title--opening" onclick="viewInfo('opening')">Opening Hours</p>
+                    <p class="tab__title tab__title--delivery" onclick="viewInfo('delivery')">Delivery</p>
                 </div>
-                <div class = "infoContent activeContent" id="overview">
+                <div class="tab__content tab__content--active" id="overview">
                     <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
                 </div>
-                <div class = "infoContent" id="opening">
+                <div class="tab__content" id="opening">
                     <p>We are open <b> Sunday to Friday </b> from 7:00 AM to 8:30 PM. Whether you're an early bird or a night owl, you'll find us ready to serve you with a smile. Come visit us and experience our warm hospitality and delicious treats.</p>
                 </div>
-                <div class = "infoContent" id="delivery">
+                <div class="tab__content" id="delivery">
                     <p>Our delivery process is crafted to ensure your orders arrive promptly and in pristine condition. Once your order is received through our online platform or via phone call, our dedicated team swings into action. For deliveries within the valley, we offer a flat rate of Rs 100.</p>
                 </div>
-                <div class="menuBtn">
+                <div class="info-section__menu-btn">
                     <a href="#menu">Explore</a>
                 </div>
             </div>
@@ -395,7 +395,6 @@
 
     <!-- external js -->
     <script src = "js/menu.js"></script>
-    <script src = "js/slideshow.js"></script>
     <script src = "js/viewInfo.js"></script>
     <script src = "js/viewMore.js"></script>
     <script src = "js/faq.js"></script>
