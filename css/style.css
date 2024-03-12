@@ -19,25 +19,35 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-    /* padding: 0 100px; */
-    /* box-sizing: border-box;
-    box-shadow: 20px, 20px black; */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0 10px;
+    }
+}
+
+.logo {
+    height: 110px;
 }
 
 .navcontent {
     display: flex;
-    /* padding: 20px; */
+}
+
+@media (max-width: 768px) {
+    .navcontent {
+        flex-direction: column;
+    }
 }
 
 .navcontent li {
-    /* display: inline-block; */
     padding: 0 20px;
 }
 
 .navcontent li a {
     font-size: 20px;
     color: rgb(33, 32, 32);
-    /* transition: all 0.3s; */
 }
 
 .navcontent li a:hover {
@@ -45,9 +55,39 @@ header {
     transition: 0.3s;
 }
 
-.logo {
-    /* margin-right: 630px; */
-    height: 110px;
+@media (max-width: 768px) {
+    nav ul {
+        background-color: #F5F5F5;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        padding-top: 55px;
+        z-index: 2;
+        transition: right 0.6s;
+    }
+
+    .navcontent li {
+        margin:25px;
+    }
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav .fa-solid {
+        display: block;
+        font-size: 28px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 45px;
+        cursor: pointer;
+    }
 }
 /* ======= nav ends ======== */
 
@@ -58,7 +98,7 @@ header {
     justify-content: space-evenly;
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
     .container {
         display: flex;
         flex-direction: row;
@@ -161,7 +201,7 @@ header {
     flex-direction: column;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     .infoContainer {
         flex-direction: row;
         justify-content: space-evenly;
@@ -173,7 +213,7 @@ header {
     width: 100%;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     .infoImg img {
         width: 565px;
     } 
@@ -183,7 +223,7 @@ header {
     text-align: center;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     .infoBody {
         text-align: left;
         padding-left: 100px;
@@ -210,7 +250,7 @@ header {
     padding-right: 50px;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     .infoTab {
         justify-content: space-between;
     }
@@ -224,10 +264,18 @@ header {
 
 .infoContent {
     display: none;
+    text-align: justify;
+    padding: 0px 20px;
 }
 
 .infoContent.activeContent {
     display: block;
+}
+
+@media (min-width: 1200px) {
+    .infoContent {
+        padding: 0px;
+    }
 }
 /* ======= info section ends ======== */
 
@@ -295,6 +343,7 @@ header {
 }
 
 .viewMoreBtn {
+    margin-bottom: 30px;
     text-decoration: none;
     border: 1px solid #6F4E37;
     border-radius: 22px;
@@ -577,7 +626,7 @@ header {
 /* ======= team section ends ======== */
 
 /* ======= footer ======== */
-.footer {
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -598,7 +647,7 @@ header {
     }
 }
 
-.logoFooter {
+.footer__logo {
     height: 80px;
 }
 
@@ -610,30 +659,40 @@ header {
     color:#28292b;
 }
 
-.footer li {
+.footer__links-store li,
+.footer__links-useful li {
     margin-bottom: 8px;
 }
 
-.storeInfo p {
+.footer__info p {
     font-size: 14px;
     margin-bottom: 8px;
 }
 
-.subscription p{
+.footer__subscription p{
     margin-bottom: 3%;
 }
 
-.storeInfo, .storeLinks, .usefulLinks, .subscription {
+.footer__info, 
+.footer__links-store, 
+.footer__links-useful, 
+.footer__subscription {
     width: 100%;
     margin-bottom: 30px;
 }
 
-.storeInfo h3, .storeLinks h3, .usefulLinks h3, .subscription h3{
+.footer__info h3, 
+.footer__links-store h3, 
+.footer__links-useful h3, 
+.footer__subscription h3{
     margin-bottom: 20px;
 }
 
 @media (min-width: 769px) {
-    .storeInfo, .storeLinks, .usefulLinks, .subscription {
+    .footer__info, 
+    .footer__links-store, 
+    .footer__links-useful, 
+    .footer__subscription {
         margin-left: 20px;
         width: 75%;
     }
@@ -648,7 +707,7 @@ input[type=email] {
     outline: none;
 }
 
-.subBtn {
+.footer__subscription-btn {
     text-decoration: none;
     border: 1px solid #6F4E37;
     border-radius: 5px;
@@ -658,7 +717,7 @@ input[type=email] {
     color: black;
 }
 
-.subBtn:hover {
+.footer__subscription-btn:hover {
     color: white;
     background-color: #6F4E37;
     transition: .3s;

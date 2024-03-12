@@ -19,13 +19,15 @@
             <img class="logo" src="images/logo.png" alt="logo">
         </a>
         <nav>
-            <ul class="navcontent">
+            <ul class="navcontent" id="sideMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#review">Review</a></li>
                 <li><a href="#about">About</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
     </header>
 
@@ -87,15 +89,15 @@
                     or cause for celebration.
                 </p>
                 <div class = "infoTab">
-                    <p class = "infoTitle activeTitle" onclick="viewInfo('overview')">Overview</p>
-                    <p class = "infoTitle" onclick="viewInfo('opening')">Opening Hours</p>
-                    <p class = "infoTitle" onclick="viewInfo('delivery')">Delivery</p>
+                    <p class = "infoTitle overview activeTitle" onclick="viewInfo('overview')">Overview</p>
+                    <p class = "infoTitle opening" onclick="viewInfo('opening')">Opening Hours</p>
+                    <p class = "infoTitle delivery" onclick="viewInfo('delivery')">Delivery</p>
                 </div>
                 <div class = "infoContent activeContent" id="overview">
                     <p>Take a journey through our website and discover an array of tempting treats crafted with love and care. From exquisitely decorated cakes to mouthwatering pastries, artisan bread, irresistible cookies, and more, there's something for every palate and every event.</p>
                 </div>
                 <div class = "infoContent" id="opening">
-                    <p><b> Sun-Fri </b> 7:00-8:30 </p>
+                    <p>We are open <b> Sunday to Friday </b> from 7:00 AM to 8:30 PM. Whether you're an early bird or a night owl, you'll find us ready to serve you with a smile. Come visit us and experience our warm hospitality and delicious treats.</p>
                 </div>
                 <div class = "infoContent" id="delivery">
                     <p>Our delivery process is crafted to ensure your orders arrive promptly and in pristine condition. Once your order is received through our online platform or via phone call, our dedicated team swings into action. For deliveries within the valley, we offer a flat rate of Rs 100.</p>
@@ -193,7 +195,7 @@
         <div class="containerBody">
             <h2><span style="color:#6F4E37">FAQs</span></h2>
             <p>You have questions.</p>
-            <p>We have answers.</p><br><br>
+            <p>We have answers.</p>
             <!--faqs -->
             <div class = "faqs">
                 <div class = "faq">
@@ -349,50 +351,49 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <div class="storeInfo">
-                <a href="index.html">
-                    <img class="logoFooter" src="images/logoFooter.png" alt="logo">
-                </a>
-                <h3>
-                    Contact us for nationwide delivery or <br/>
-                    local, in-store pick up.
-                </h3>
-                <p><i class="fa-solid fa-location-dot"></i>  Kamalpokhari, Kathmandu</p>
-                <p><i class="fa-solid fa-phone"></i> 01-4987345</p>
-                <p><i class="fa-solid fa-envelope"></i> bakemandu@gmail.com</p>
-            </div>
-            <div class="storeLinks">
-                <h3>Our Store</h3>
-                <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#review">Review</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-            <div class="usefulLinks">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li><a href="https://www.dominosugar.com/baking-tips-how-tos/basic-baking-tips" target="_blank">Tips</a></li>
-                    <li><a href="https://www.loveandlemons.com/baking-recipes/" target="_blank">Recipes</a></li>
-                    <li><a href="https://www.escoffier.edu/blog/baking-pastry/baking-basics-essential-baking-tips-and-techniques-for-beginners/" target="_blank">Basics</a></li>
-                </ul>
-            </div>
-            <div class="subscription">
-                <h3>Don't miss updates from us!</h3>
-                <p>
-                    Get regular email subscription to festival discounts. <br/>
-                    Subscribe for exclusive offers.
-                </p>
-                <input type="email" id="email" placeholder="Enter your email address">
-                <button class="subBtn" onclick="subscribe()">Subscribe</button>
-            </div>
+    <footer class="footer">
+        <div class="footer__info">
+            <a href="index.html">
+                <img class="footer__logo" src="images/logoFooter.png" alt="logo">
+            </a>
+            <h3>
+                Contact us for nationwide delivery or <br/>
+                local, in-store pick up.
+            </h3>
+            <p><i class="fa-solid fa-location-dot"></i>  Kamalpokhari, Kathmandu</p>
+            <p><i class="fa-solid fa-phone"></i> 01-4987345</p>
+            <p><i class="fa-solid fa-envelope"></i> bakemandu@gmail.com</p>
+        </div>
+        <div class="footer__links-store">
+            <h3>Our Store</h3>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <div class="footer__links-useful">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://www.dominosugar.com/baking-tips-how-tos/basic-baking-tips" target="_blank">Tips</a></li>
+                <li><a href="https://www.loveandlemons.com/baking-recipes/" target="_blank">Recipes</a></li>
+                <li><a href="https://www.escoffier.edu/blog/baking-pastry/baking-basics-essential-baking-tips-and-techniques-for-beginners/" target="_blank">Basics</a></li>
+            </ul>
+        </div>
+        <div class="footer__subscription">
+            <h3>Don't miss updates from us!</h3>
+            <p>
+                Get regular email subscription to festival discounts. <br/>
+                Subscribe for exclusive offers.
+            </p>
+            <input type="email" id="email" placeholder="Enter your email address">
+            <button class="footer__subscription-btn" onclick="subscribe()">Subscribe</button>
         </div>
     </footer>
 
     <!-- external js -->
+    <script src = "js/menu.js"></script>
     <script src = "js/slideshow.js"></script>
     <script src = "js/viewInfo.js"></script>
     <script src = "js/viewMore.js"></script>
