@@ -19,45 +19,35 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
-    box-sizing: border-box;
-    box-shadow: 20px, 20px black;
+    /* padding: 0 100px; */
+    /* box-sizing: border-box;
+    box-shadow: 20px, 20px black; */
 }
 
 .navcontent {
-    list-style: none;
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .navcontent li {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 0 20px;
 }
 
 .navcontent li a {
     font-size: 20px;
     color: rgb(33, 32, 32);
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
 }
 
 .navcontent li a:hover {
     color: #695343;
+    transition: 0.3s;
 }
 
 .logo {
-    margin-right: 630px;
+    /* margin-right: 630px; */
     height: 110px;
-}
-
-@media only screen and (max-width: 600px) {
-    nav ul {
-        position: absolute;
-        left:280px;
-    }
-
-    .navcontent li {
-        display: block;
-    }
 }
 /* ======= nav ends ======== */
 
